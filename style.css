@@ -56,6 +56,9 @@ p {
 .daniel {
    grid-area: daniel;
    background-color: var(--violet);
+   background-image: url("/images/bg-pattern-quotation.svg");
+   background-repeat: no-repeat;
+   background-position: 80% 0;
 }
 
 .jonathan {
