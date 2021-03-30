@@ -1,0 +1,141 @@
+:root {
+   --violet: hsl(263, 55%, 52%);
+   --dark-grayish-blue: hsl(217, 19%, 35%);
+   --dark-blackish-blue: hsl(219, 29%, 14%);
+   --White: hsl(0, 0%, 100%);
+
+   --light-gray: hsl(0, 0%, 81%);
+   --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+   box-sizing: border-box;
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   font-size: 14px;
+   font-weight: 600;
+   background-color: #EDF2F8;
+}
+
+h2, h4 {
+   margin: 0;
+}
+
+p {
+   font-weight: 500;
+   margin: 0;
+}
+
+.c-dg {
+   color: var(--dark-grayish-blue)!important;
+}
+
+.c-db {
+   color: var(--dark-blackish-blue)!important;
+}
+
+.container {
+   padding: 40px;
+   margin: 0 auto;
+}
+
+.inner-container {
+   padding: 40px;
+}
+
+.b-r {
+   border-radius: 10px;
+}
+
+.grid {
+   display: grid;
+   grid-template-areas: 'daniel daniel jonathan kira'
+                        'jeanatte patrick patrick kira';
+   gap: 30px;
+}
+
+.daniel {
+   grid-area: daniel;
+   background-color: var(--violet);
+}
+
+.jonathan {
+   grid-area: jonathan;
+   background-color: var(--dark-grayish-blue);
+}
+
+.kira {
+   grid-area: kira;
+   background-color: var(--White);
+}
+
+.jeanatte {
+   grid-area: jeanatte;
+   background-color: var(--White);
+}
+
+.patrick {
+   grid-area: patrick;
+   background-color: var(--dark-blackish-blue);
+}
+
+
+.card-header {
+   display: flex;
+   align-items: center;
+}
+
+.avatar {
+   margin-right: 20px;
+}
+
+.avatar img {
+   border-radius: 50%;
+   border: 3px solid var(--violet);
+}
+
+.person-name {
+   font-size: 20px;
+   margin-bottom: 4px;
+   color: var(--light-grayish-blue);
+}
+
+.person-degree {
+   font-size: 16px;
+   color: var(--light-gray);
+}
+
+.card-title {
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+
+.title {
+   font-size: 24px;
+   letter-spacing: 0.5px;
+   color: var(--light-grayish-blue);
+   align-self: center;
+}
+
+.description {
+   line-height: 22px;
+   letter-spacing: 1px;
+   color: var(--light-gray);
+}
+
+@media screen and (max-width: 1023px) {
+   .container {
+      padding: 10px;
+   }
+   .grid {
+   grid-template-areas: 'daniel'  
+                        'jonathan'                     
+                        'kira'
+                        'jeanatte'
+                        'patrick';
+   gap: 20px;
+   }   
+
+   .card-title {
+      margin-bottom: 10px;
+   }
+}
