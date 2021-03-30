@@ -126,6 +126,10 @@ p {
    .container {
       padding: 10px;
    }
+
+   .inner-container {
+      padding: 20px;
+   }
    .grid {
    grid-template-areas: 'daniel'  
                         'jonathan'                     
